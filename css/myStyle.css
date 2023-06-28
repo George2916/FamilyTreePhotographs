@@ -1,0 +1,158 @@
+/* STYLING FOR INDEX.HTML */
+
+#IDAA {   
+    width: 100%;
+    text-align: center;
+}
+
+/* STYLING FOR GALLERY PAGES */
+
+.font, .fontGAG { 
+    font-family: 'Merriweather', var(--bs-body-font-family);
+}
+
+@media screen and (max-width: 991px) {
+    .font {
+       font-size: 90%;
+    }
+    .fontGAG {
+        font-size: 1rem;
+    }
+ }
+ 
+ @media screen and (min-width: 992px) {
+    .font {
+       font-size: 100%;
+    }
+    .fontGAG {
+        font-size: 1.25rem;
+    }
+ }
+
+a img:hover {
+  cursor: -webkit-grab; 
+  cursor: grab;  
+}
+
+ .classAA, .classBB {
+    display: inline;
+   
+}
+
+@media screen and (max-width: 575px) {
+    .classAA {
+        visibility: hidden;
+    }
+ }
+ 
+ @media screen and (min-width: 576px) {
+    .classAA {
+        visibility: visible;
+    }    
+ }
+
+.classBB {
+    float: right;
+}
+
+/* styling for navbar */
+
+.navbar {
+	background: #FF7034;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;   
+}
+
+.dropdown-menu {
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	background: linear-gradient(#00FFFF, #ccfff2);
+	background: -moz-linear-gradient(#00FFFF, #ccfff2);
+	background: -webkit-linear-gradient(#00FFFF, #ccfff2);
+	background: -o-linear-gradient(#00FFFF, #ccfff2);
+}
+
+.dropdown-item:hover {
+	background: #00FFFF;
+	border-radius: 15px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+#dropdownMenuButton {
+    background: #FF7034;
+    border-color: #FF7034;
+    border-top: 20px;
+    color: black;  
+}
+
+@media only screen and (max-width: 991px) { 
+    #dropdownMenuButton {
+        text-align: left;        
+        padding-left: 0px;
+    }
+}
+
+@media only screen and (min-width: 992px) { 
+    #dropdownMenuButton {     
+        position: absolute;
+        bottom: 1px;
+    }
+}
+
+/* styling for background of galleries */
+
+.gallery-background {    
+    background: #00FFFF;
+    border-radius: 8px;
+    padding: 20px;    
+}
+
+/* sytling for modals*/
+
+.modal-content {	
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    background: linear-gradient(#00FFFF, #ccfff2);
+    background: -moz-linear-gradient(#00FFFF, #ccfff2);
+    background: -webkit-linear-gradient(#00FFFF, #ccfff2);
+    background: -o-linear-gradient(#00FFFF, #ccfff2);
+}
+
+.modal-header {
+    border-bottom: 2px solid #0080ff;
+}
+
+/* styling for Previous and Next buttons at bottom of galleries */
+
+.previousBtn {
+    float: left;
+    background: #00FFFF;
+    border: 2px solid #ccc;
+    border-radius: 10px;        
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: black;
+}
+
+.nextBtn {
+    float: right;
+    background: #00FFFF;
+    border: 2px solid #ccc;
+    border-radius: 10px;        
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: black;    
+}
+    
