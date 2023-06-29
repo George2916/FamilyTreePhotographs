@@ -58,7 +58,7 @@ a img:hover {
 /* styling for navbar */
 
 .navbar {
-	background: #FF7034;
+	background: red;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
