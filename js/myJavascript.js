@@ -28,6 +28,14 @@ $("div[id^='myModal']").each(function(){
     location.href = "gallery1.html"
   }
 
+  function myFunction1A() {
+    location.href = "gallery2GAGIII.html"
+  }
+  
+  function myFunction2A() {
+    location.href = "gallery1GAGIII.html"
+  }
+
 /* javascript for visitor counter at bottom of index.html */
 
 var counterContainer = document.querySelector(".website-counter");
