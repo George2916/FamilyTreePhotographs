@@ -13,6 +13,7 @@
 
 /* STYLING FOR GALLERY PAGES */
 
+
 .font, .fontGAG { 
     font-family: 'Merriweather', var(--bs-body-font-family);
 }
@@ -46,15 +47,9 @@ a img:hover {
 }
 
 @media screen and (max-width: 575px) {
-    .classAA {
-        visibility: hidden;
+    .classAA, .classBB  {
+        display: none;
     }
- }
- 
- @media screen and (min-width: 576px) {
-    .classAA {
-        visibility: visible;
-    }    
  }
 
 .classBB {
