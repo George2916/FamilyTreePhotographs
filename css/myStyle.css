@@ -1,24 +1,9 @@
-/* STYLING FOR INDEX.HTML */
-
-#IDAA {   
-    width: 100%;
-    text-align: center;
-}
-
-/* hide counter at bottom of index.com */
-
-.classCC {
-    visibility: hidden;
-} 
-
-/* STYLING FOR GALLERY PAGES */
-
 
 .font, .fontGAG { 
     font-family: 'Merriweather', var(--bs-body-font-family);
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 991px) {
     .font {
        font-size: 90%;
     }
@@ -41,20 +26,15 @@ a img:hover {
   cursor: grab;  
 }
 
- .classAA, .classBB {
-    display: inline;
-   
+ .classAA {
+    display: inline;   
 }
 
-@media screen and (max-width: 575px) {
-    .classAA, .classBB  {
+@media screen and (min-width: 575px) {
+    .classAA  {
         display: none;
     }
  }
-
-.classBB {
-    float: right;
-}
 
 /* styling for navbar */
 
@@ -66,48 +46,7 @@ a img:hover {
 	-o-border-radius: 5px;   
 }
 
-.dropdown-menu {
-	border: 2px solid #ccc;
-	border-radius: 10px;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	-o-border-radius: 10px;
-	background: linear-gradient(#00FFFF, #ccfff2);
-	background: -moz-linear-gradient(#00FFFF, #ccfff2);
-	background: -webkit-linear-gradient(#00FFFF, #ccfff2);
-	background: -o-linear-gradient(#00FFFF, #ccfff2);
-}
-
-.dropdown-item:hover {
-	background: #00FFFF;
-	border-radius: 15px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-o-border-radius: 5px;
-}
-
-#dropdownMenuButton {
-    background: #FF7034;
-    border-color: #FF7034;
-    border-top: 20px;
-    color: black;  
-}
-
-@media only screen and (max-width: 991px) { 
-    #dropdownMenuButton {
-        text-align: left;        
-        padding-left: 0px;
-    }
-}
-
-@media only screen and (min-width: 992px) { 
-    #dropdownMenuButton {     
-        position: absolute;
-        bottom: 1px;
-    }
-}
-
-/* styling for background of galleries */
+/* styling for background of gallery */
 
 .gallery-background {    
     background: #00FFFF;
@@ -133,27 +72,137 @@ a img:hover {
     border-bottom: 2px solid #0080ff;
 }
 
-/* styling for Previous and Next buttons at bottom of galleries */
+/* styling for tailend.html */
 
-.previousBtn {
-    float: left;
-    background: #00FFFF;
-    border: 2px solid #ccc;
-    border-radius: 10px;        
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -o-border-radius: 10px;
-    color: black;
+#gagivBody {
+  background: #00FFFF;
+  border-radius: 8px;
+  padding: 20px;
 }
 
-.nextBtn {
-    float: right;
-    background: #00FFFF;
-    border: 2px solid #ccc;
-    border-radius: 10px;        
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -o-border-radius: 10px;
-    color: black;    
+#book {
+  width:80vw;
+  /* height:40vh; see media queries below */
+  /* outline:2px solid black; */
+  position:absolute;
+  left:10vw;
+  top: 20vh;
+  perspective:75vw;
 }
-    
+
+.page {
+  width:50%;
+  height:100%;
+  position:absolute;
+  left:50%;
+  top:0;
+  transition:z-index .01s linear 1s, transform 2s linear;
+  transform-origin:0% 50%;
+  z-index:13;
+  cursor:pointer;
+}
+
+.front, .back {
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  opacity:0;
+  transition:opacity .1s linear 1s;
+  cursor: pointer;
+}
+
+.front {
+  opacity:1;
+}
+.back {
+  transform:scaleX(-1);
+}
+
+input {
+  visibility:hidden;
+}
+
+label {
+  width:100%;
+  height:100%;
+  z-index:99;
+  position:absolute;
+  left:0;
+  top:0;
+  margin:0;
+  padding:0;
+}
+
+input:checked + .page {
+  transform:rotateY(-180deg); 
+}
+
+input:checked + .page .front {
+  opacity:0;  
+}
+input:checked + .page .back {
+  opacity:1;  
+}
+
+#three:checked + .page {
+  z-index:3;
+}
+#two:checked + .page {
+  z-index:2;
+}
+#one:checked + .page {
+  z-index:1;
+}
+
+@media only screen and (max-width: 399.9px) {
+  #book {
+    height:31vh;
+  }
+}
+@media only screen and (min-width: 400px) {
+  #book {
+    height:39vh;
+  }
+} 
+@media only screen and (min-width: 500px) {
+  #book {
+    height:47vh;
+  }
+} 
+@media only screen and (min-width: 600px) {
+  #book {
+    height:55vh;
+  }
+} 
+@media only screen and (min-width: 700px) {
+  #book {
+    height:63vh;
+  }
+} 
+@media only screen and (min-width: 800px) {
+  #book {
+    height:71vh;
+  }
+} 
+@media only screen and (min-width: 900px) {
+  #book {
+    height:79vh;
+  }
+} 
+@media only screen and (min-width: 1000px) {
+  #book {
+    height:87vh;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  #book {
+    height:95vh;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #book {
+    height:99vh;
+  }
+} 
