@@ -2,17 +2,8 @@
 .font, .fontGAG { 
     font-family: 'Merriweather', var(--bs-body-font-family);
 }
-
-@media screen and (min-width: 991px) {
-    .font {
-       font-size: 90%;
-    }
-    .fontGAG {
-        font-size: 1rem;
-    }
- }
  
- @media screen and (min-width: 992px) {
+ @media screen and (min-width: 1200px) {
     .font {
        font-size: 100%;
     }
@@ -20,6 +11,15 @@
         font-size: 1.25rem;
     }
  }
+
+ @media screen and (min-width: 2000px) {
+  .font {
+     font-size: 120%;
+  }
+  .fontGAG {
+      font-size: 1.75rem;
+  }
+}
 
 a img:hover {
   cursor: -webkit-grab; 
@@ -29,12 +29,6 @@ a img:hover {
  .classAA {
     display: inline;   
 }
-
-@media screen and (min-width: 575px) {
-    .classAA  {
-        display: none;
-    }
- }
 
 /* styling for navbar */
 
