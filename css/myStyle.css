@@ -5,12 +5,6 @@
     text-align: center;
 }
 
-/* hide counter at bottom of index.com */
-/*
-.classCC {
-    visibility: hidden;
-} */
-
 /* STYLING FOR GALLERY PAGES */
 
 .font, .fontGAG { 
@@ -155,14 +149,14 @@ a img:hover {
     color: black;    
 }
 
-/* styling for right and left arrows in galleryGAGIV.html */ 
+/* styling for right and left arrows in weddingGAGII.html */ 
 
 .carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-   }
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FF7034' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
 
-   .carousel-control-next {
-    filter: invert(50%);
+   .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FF7034' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;     
 }
 
 /* styling for songsGAGIV.html */
@@ -502,4 +496,50 @@ input:checked + .page .back {
   color: black;
   text-decoration: none;
 } 
+
+/*styling for weddingGAGII.html*/
+
+@media only screen and (max-width: 576px) {
+  .carousel-item > p  {font-size: 85%}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {	
+	.weddingText {
+		font-size: 85%;
+}
+}
+
 
