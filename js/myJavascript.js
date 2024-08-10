@@ -36,4 +36,23 @@ $("div[id^='myModal']").each(function(){
     location.href = "gallery1GAGIII.html"
   }
 
+  function myFunction2023A() {
+    location.href = "sunghee2021-22.html"
+  }
+
+  function myFunction2023B() {
+    location.href = "sunghee2024.html"
+  }
+
+
+/* javascript for songsGAGIV.html */
+
+  function songsFunction() {
+    var x = document.getElementById("myDiv");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
 

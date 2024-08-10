@@ -1,0 +1,242 @@
+/* STYLING FOR SUNGHEE2021-22.HTML */
+
+/* styling for navbar */
+
+.navbar {
+  background: #FF7034;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;   
+}
+
+.dropdown-menu {
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	background: linear-gradient(#00FFFF, #ccfff2);
+	background: -moz-linear-gradient(#00FFFF, #ccfff2);
+	background: -webkit-linear-gradient(#00FFFF, #ccfff2);
+	background: -o-linear-gradient(#00FFFF, #ccfff2);
+}
+
+.dropdown-item:hover {
+	background: #00FFFF;
+	border-radius: 15px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+#dropdownMenuButton {
+    background: #FF7034;
+    border-color: #FF7034;
+    border-top: 20px;
+    color: black;  
+    border: 0;
+}
+
+.MMM {
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 991px) {
+  .NNN {
+     margin-top: 2px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .NNN {
+     margin-top: 12px;
+  }
+}
+
+.OOO {
+  margin-top: 12px;
+}
+
+.MMM:hover {
+background: #FFB697;
+border-radius: 15px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-o-border-radius: 5px;
+padding-left: 3px;
+width: 100px;
+}
+
+#dropdownMenuButton:hover {
+background: #FFB697;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-o-border-radius: 5px;
+padding-left: 3px;}
+
+@media only screen and (max-width: 991px) { 
+  #dropdownMenuButton {
+      text-align: left;        
+      padding-left: 0px;
+  }
+}
+
+.font, .fontGAG{ 
+  font-family: 'Merriweather', 'Georgia', var(--bs-body-font-family);
+}
+
+.textCenter{
+  text-align: center;
+}
+
+.navbar {
+	background: #FF7034;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;   
+}
+
+.background {    
+  background: #00FFFF;
+  border-radius: 8px;  
+  padding-bottom: 50px;   
+}
+
+.playingCardHand {
+ display: flex;
+ justify-content: center;
+ /*margin: auto;
+  width: 50%;*/
+ margin-top: 32px;
+}
+
+ .playingCard {
+  width: 300px;
+  height: 480px;
+  background-color: lightblue;
+  border: 1px solid darkblue;
+  border-radius: 40px;
+  display: block;
+  font-family: 'Merriweather', 'Georgia';
+  padding: 16px;
+  flex-direction: column;
+  margin: 0 -20px;
+  color: inherit;    
+  text-decoration: none; 
+} 
+
+.playingCard:link {      
+  text-decoration: inherit;
+  color: inherit;
+}
+
+/* skewing of playingCards */
+
+#playingCard1 {
+  transform: rotate(-6deg) translateY(0px);
+  transform-origin: bottom right;
+}
+
+#playingCard1:hover {
+  transform: rotate(-6deg) translateY(-30px);
+  transform-origin: bottom right;
+  cursor: grab;
+}
+
+.playingCard2 {      
+   transform: translateY(-30px);
+}
+
+#playingCard2:hover {
+  transform: rotate(0deg) translateY(-30px);
+  cursor: grab;
+}
+
+#playingCard3 {
+  transform: rotate(6deg) translateY(0px);
+  transform-origin: bottom left;
+}
+
+#playingCard3:hover {
+  transform: rotate(6deg) translateY(-30px);
+  transform-origin: bottom left;
+  cursor: grab;
+}
+
+@media screen and (max-width: 992px) {
+  #playingCard1:hover {
+    padding-bottom: 30px;
+  }
+  #playingCard2:hover {
+    padding: 30px;
+  }
+  #playingCard3:hover {
+    padding-top: 30px;
+  }
+}
+
+.playingCard-image {
+  display: block;
+  flex: auto;
+  margin: 40px 0;
+  overflow: hidden;
+  position: relative;
+  transform: skew(0, -6deg); 
+  width: 100%;
+}
+
+/* styling for modals */
+
+.modal-content {	
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  background: linear-gradient(#00FFFF, #ccfff2);
+  background: -moz-linear-gradient(#00FFFF, #ccfff2);
+  background: -webkit-linear-gradient(#00FFFF, #ccfff2);
+  background: -o-linear-gradient(#00FFFF, #ccfff2);
+}
+
+.modal-body > p {
+  border-bottom: 2px solid #0080ff;
+  font-family: 'Merriweather', 'Georgia';
+}
+
+.modal-header {border-bottom: 2px solid #0080ff;}
+
+.modal-title {
+  /* color: #0080ff; */  
+  font-family: 'Merriweather', 'Georgia';
+  font-size: 125%;
+}
+
+/* styling for Previous and Next buttons at bottom of page */
+
+.prevBtn {
+  float: left;
+  background: #00FFFF;
+  border: 2px solid #ccc;
+  border-radius: 10px;        
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  color: black; 
+  font-family: 'Merriweather', 'Georgia';   
+}
+
+.nextBtn {
+  float: right;
+  background: #00FFFF;
+  border: 2px solid #ccc;
+  border-radius: 10px;        
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  color: black; 
+  font-family: 'Merriweather', 'Georgia';   
+}

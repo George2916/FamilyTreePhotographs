@@ -16,12 +16,12 @@
 
 </head>
     
-<body id="gagivBody">  
+<body id="gagivBody"> 
 
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <a><span class="fontGAG">George Alfred Greenslade IV&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" onclick="songsFunction()" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -48,11 +48,12 @@
   
   <div class="gallery-background">
 
-    <div class="text-center">
+    <div class="text-center" id="myDiv">
       <span class="font"><i>Click on pages to move back and forth.</i></span>      
+      <p></p>
     </div>
   
-    <div id="book">
+    <div id="book" class="bookG">
   
         <input type="checkbox" id="thirteen">
         <div id="page13" class="page">
@@ -105,8 +106,8 @@
 
         <input type="checkbox" id="six">
         <div id="page6" class="page">
-          <div class="front"><img class="img-fluid d-block w-100" src="images/songs/11.jpg" alt="..."/></div>
-          <div class="back"><img class="img-fluid d-block w-100" src="images/songs/12.jpg" alt="..."/></div>
+          <div class="front"><img class="img-fluid d-block w-100" src="images/songs/11.jpg" alt="..."/></div> 
+          <div class="back"><img class="img-fluid d-block w-100" src="images/songs/12.jpg" alt="..."/></div>          
           <label for="six"></label>
         </div>
 
@@ -142,14 +143,15 @@
         <div id="page1" class="page">
           <div class="front"><img class="img-fluid d-block w-100" src="images/songs/1.jpg"  alt="..."></div>
           <div class="back"><img class="img-fluid d-block w-100" src="images/songs/blankPage.jpg" alt="..."/></div>
-          <label for="one"></label>
-        </div>
+          <label for="one"></label>          
+        </div>    
 
-    </div>
+    </div><!--closes .container-->
+    
+  </div><!--closes .gallery-background-->
 
-  </div>  
-  
-  <script src="js/bootstrap.js"></script>
-  
+<script src="js/bootstrap.js"></script>
+<script src="js/myJavascript.js"></script>
+
 </body>
 </html>

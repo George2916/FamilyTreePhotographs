@@ -1,14 +1,29 @@
-/* STYLING FOR INDEX.HTML */
+/* STYLING FOR INDEX.HTML, DUFFYCOMMUNION PHOTOS.HTML, FIVESONS.HTML, GALLERY1GAGI.HTML, GALLERY1GAGIII.HTML, GALLERY2GAG1.HTML, GALLERY2GAGIII.HTML, SKETCHES.HTML, SONGSGAGIV.HTML AND SUNGHEE2023.HTML */
+
+/* styling for index.html */
 
 #IDAA {   
     width: 100%;
     text-align: center;
 }
 
-/* STYLING FOR GALLERY PAGES */
+/* styling for gallery pages */
 
-.font, .fontGAG { 
+.font, .fontGAG, .fontModal22 { 
     font-family: 'Merriweather', var(--bs-body-font-family);
+}
+
+
+@media screen and (max-width: 500px) {
+  .fontModal22 {
+     font-size: 75%;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 991px) { 
+  .fontModal22 {
+    font-size: 85%;
+ }
 }
 
 @media screen and (max-width: 991px) {
@@ -21,7 +36,7 @@
  }
  
  @media screen and (min-width: 992px) {
-    .font {
+    .font, .fontModal22 {
        font-size: 100%;
     }
     .fontGAG {
@@ -90,21 +105,21 @@ a img:hover {
         text-align: left;        
         padding-left: 0px;
     }
-}
-
+} 
+/* 
 @media only screen and (min-width: 992px) { 
     #dropdownMenuButton {     
         position: absolute;
         bottom: 1px;
     }
-}
+} */
 
 /* styling for background of galleries and carousels */
 
 .gallery-background, .carousel-background {    
     background: #00FFFF;
     border-radius: 8px;
-    padding: 20px;    
+    padding: 20px;
 }
 
 /* sytling for modals*/
@@ -138,6 +153,10 @@ a img:hover {
     color: black;
 }
 
+.previousBtnS2023 {
+  font-family: 'Merriweather', 'Georgia';
+}
+
 .nextBtn {
     float: right;
     background: #00FFFF;
@@ -147,6 +166,10 @@ a img:hover {
     -moz-border-radius: 10px;
     -o-border-radius: 10px;
     color: black;    
+}
+
+.nextBtnS2023 {
+  font-family: 'Merriweather', 'Georgia';
 }
 
 /* styling for right and left arrows in weddingGAGII.html */ 
@@ -159,19 +182,24 @@ a img:hover {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FF7034' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;     
 }
 
-/* styling for songsGAGIV.html */
+/* styling for songsGAGIV.html and sketches.html*/
 
-#gagivBody {
-  /*outline:2px solid black;*/
+#gagivBody { 
   background: #00FFFF;
-  border-radius: 8px;
   padding: 20px;
+  cursor: pointer;
+}
+
+#gagivBody2 { 
+  background: #00FFFF;
+  padding: 20px;
+  cursor: none;
 }
 
 #book {
   width:80vw;
   /* height:40vh; see media queries below */
-  /*outline:2px solid black;*/
+  /* outline:2px solid red; */
   position:absolute;
   left:10vw;
   top: 20vh;
@@ -187,7 +215,6 @@ a img:hover {
   transition:z-index .01s linear 1s, transform 2s linear;
   transform-origin:0% 50%;
   z-index:13;
-  cursor:pointer;
 }
 
 #page13 {
@@ -202,7 +229,6 @@ a img:hover {
   left:0;
   opacity:0;
   transition:opacity .1s linear 1s;
-  cursor: pointer;
 }
 
 .front {
@@ -210,6 +236,10 @@ a img:hover {
 }
 .back {
   transform:scaleX(-1);
+}
+
+.front img ,.back img {
+  padding-bottom: 20px;
 }
 
 input {
@@ -282,213 +312,305 @@ input:checked + .page .back {
 }
 
 @media only screen and (max-width: 399.9px) {
-  #book {
+  .bookG {
     height:24vh;
   }
 } 
 @media only screen and (min-width: 400px) {
-  #book {
+  .bookG {
     height:25vh;
   }
 } 
 @media only screen and (min-width: 415px) {
-  #book {
+  .bookG {
     height:26vh;
   }
 } 
 @media only screen and (min-width: 430px) {
-  #book {
+  .bookG {
     height:27vh;
   }
 } 
 @media only screen and (min-width: 445px) {
-  #book {
+  .bookG {
     height:28vh;
   }
 } 
 @media only screen and (min-width: 460px) {
-  #book {
+  .bookG {
     height:29vh;
   }
 } 
 @media only screen and (min-width: 475px) {
-  #book {
+  .bookG {
     height:30vh;
   }
 }
 @media only screen and (min-width: 490px) {
-  #book {
+  .bookG {
     height:31vh;
   }
 }
 @media only screen and (min-width: 505px) {
-  #book {
+  .bookG {
     height:32vh;
   }
 } 
 @media only screen and (min-width: 520px) {
-  #book {
+  .bookG {
     height:33vh;
   }
 }
 @media only screen and (min-width: 535px) {
-  #book {
+  .bookG {
     height:34vh;
   }
 }
 @media only screen and (min-width: 550px) {
-  #book {
+  .bookG {
     height:35vh;
   }
 } 
 @media only screen and (min-width: 565px) {
-  #book {
+  .bookG {
     height:36vh;
   }
 }
 @media only screen and (min-width: 580px) {
-  #book {
+  .bookG {
     height:37vh;
   }
 }
 @media only screen and (min-width: 600px) {
-  #book {
+  .bookG {
     height:38vh;
   }
 }
 @media only screen and (min-width: 620px) {
-  #book {
+  .bookG {
     height:39vh;
   }
 }
 @media only screen and (min-width: 640px) {
-  #book {
+  .bookG {
     height:40vh;
   }
 }
 @media only screen and (min-width: 660px) {
-  #book {
+  .bookG {
     height:41vh;
   }
 } 
 @media only screen and (min-width: 680px) {
-  #book {
+  .bookG {
     height:42vh;
   }
 }
 @media only screen and (min-width: 700px) {
-  #book {
+  .bookG {
     height:44vh;
   }
 }
 @media only screen and (min-width: 720px) {
-  #book {
+  .bookG {
     height:45vh;
   }
 } 
 @media only screen and (min-width: 740px) {
-  #book {
+  .bookG {
     height:46vh;
   }
 } 
 @media only screen and (min-width: 760px) {
-  #book {
+  .bookG {
     height:47vh;
   }
 } 
 @media only screen and (min-width: 780px) {
-  #book {
+  .bookG {
     height:48vh;
   }
 }
 @media only screen and (min-width: 800px) {
-  #book {
+  .bookG {
     height:50vh;
   }
 } 
 @media only screen and (min-width: 825px) {
-  #book {
+  .bookG {
     height:51vh;
   }
 } 
 @media only screen and (min-width: 850px) {
-  #book {
+  .bookG {
     height:52vh;
   }
 } 
 @media only screen and (min-width: 875px) {
-  #book {
+  .bookG {
     height:53vh;
   }
 } 
 @media only screen and (min-width: 900px) {
-  #book {
+  .bookG {
     height:56vh;
   }
 }
 @media only screen and (min-width: 920px) {
-  #book {
+  .bookG {
     height:57vh;
   }
 }
 @media only screen and (min-width: 940px) {
-  #book {
+  .bookG {
     height:58vh;
   }
 }
 @media only screen and (min-width: 960px) {
-  #book {
+  .bookG {
     height:59vh;
   }
 }
 @media only screen and (min-width: 980px) {
-  #book {
+  .bookG {
     height:60vh;
   }
 }
 @media only screen and (min-width: 1000px) {
-  #book {
+  .bookG {
     height:63vh;
   }
 }
 @media only screen and (min-width: 1025px) {
-  #book {
+  .bookG {
     height:66vh;
   }
 }
 @media only screen and (min-width: 1100px) {
-  #book {
+  .bookG {
     height:69vh;
   }
 }
 @media only screen and (min-width: 1150px) {
-  #book {
+  .bookG {
     height:72vh;
   }
 }
 @media only screen and (min-width: 1200px) {
-  #book {
+  .bookG {
     height:75vh;
   }
 }
 @media only screen and (min-width: 1250px) {
-  #book {
+  .bookG {
     height:78vh;
   }
 }
 @media only screen and (min-width: 1300px) {
-  #book {
+  .bookG {
     height:81vh;
   }
 }
 @media only screen and (min-width: 1350px) {
-  #book {
+  .bookG {
     height:84vh;
   }
 }
 @media only screen and (min-width: 1400px) {
-  #book {
+  .bookG {
     height:88vh;
+  }
+}
+
+
+@media only screen and (max-width: 399.9px) {
+  .bookS {
+    height: 205px;
+  }
+} 
+@media only screen and (min-width: 400px) {
+  .bookS {
+    height: 260px;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .bookS {
+    height: 315px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .bookS {
+    height: 370px;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .bookS {
+    height: 425px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .bookS {
+    height: 480px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .bookS {
+    height: 535px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .bookS {
+    height: 590px;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .bookS {
+    height: 645px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .bookS {
+    height: 700px;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .bookS {
+    height: 755px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .bookS {
+    height: 810px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .bookS {
+    height: 865px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .bookS {
+    height: 920px;
+  }
+}
+@media only screen and (min-width: 1700px) {
+  .bookS {
+    height: 975px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .bookS {
+    height: 1030px;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  .bookS {
+    height: 1085px;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .bookS {
+    height: 1140px;
   }
 }
 
@@ -503,43 +625,17 @@ input:checked + .page .back {
   .carousel-item > p  {font-size: 85%}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 767px) {	
 	.weddingText {
 		font-size: 85%;
 }
 }
+
+.demo {
+  display: none;
+}
+
+
+
 
 
