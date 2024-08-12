@@ -17,6 +17,51 @@
    
 </head>
 
+<style>
+
+@media only screen and (min-width: 768px) {
+  .largePhotoModalDialog {margin-left: 30vw;}
+  .smallPhotoModalDialog {margin-left: 17vw;}	
+	.modal-title {color: green;}
+  .modal-header {height: 0;}
+  .largePhotoModal {max-width: 65vh;}
+  .smallPhotoModal {max-width: 99vh;}
+  .modal-footer {padding-top: 0;
+    padding-bottom: 0;
+    height: 50px;}
+  .modal-body {padding-bottom: 0;}
+}
+
+@media only screen and (min-width: 992px) {
+  .largePhotoModalDialog {margin-left: 35vw;}
+  .smallPhotoModalDialog {margin-left: 17vw;}	
+	.modal-title {color: red;}
+  .modal-header {height: 0;}
+  .largePhotoModal {max-width: 65vh;}
+  .smallPhotoModal {max-width: 700px;}
+  .modal-footer {padding-top: 0;
+    padding-bottom: 0;
+    height: 50px;}
+  .modal-body {padding-bottom: 0;}
+}
+
+@media only screen and (min-width: 1200px) {	
+  .largePhotoModalDialog {margin-left: 35vw;}
+  .smallPhotoModalDialog {margin-left: 23vw;}
+	.modal-title {color:yellow;}
+  .modal-header {height: 0;}
+  .largePhotoModal {max-width: 65vh;}
+  .smallPhotoModal {max-width: 700px;}
+  .modal-footer {padding-top: 0;
+    padding-bottom: 0;
+    height: 50px;}
+  .modal-body {padding-bottom: 0;}
+}
+
+
+
+</style>
+
 <body>
 
 <div class="container-fluid">
@@ -117,7 +162,7 @@
     </div>
     <div class="photo">
         <a data-bs-toggle="modal" data-bs-target="#myModal9">
-            <img src="images/sunghee2024/fi9.jpg">
+            <img src="images/sunghee2024/fi7B.jpg">
         </a>
     </div>  
     <div class="photo">
@@ -445,13 +490,13 @@
 <div><!--modals for Europe-->
 
 <div class="modal fade" id="myModal1" tabindex="-1" aria-labelledby="myModal1" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModal">
         <div class="modal-header">
           <p class="modal-title font">Helsinki</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body border-bottom-0">
+        <div class="modal-body"><!--border-bottom-0 deleted -->
           <img src="images/sunghee2024/fi1B.jpg" alt="image">
         </div>
         <div class="modal-footer border-top-0">
@@ -462,8 +507,8 @@
   </div> 
   
   <div class="modal fade" id="myModal2" tabindex="-1" aria-labelledby="myModal2" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModal">
         <div class="modal-header">
           <p class="modal-title font">Helsinki</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -480,8 +525,8 @@
   </div>
 
   <div class="modal fade" id="myModal3" tabindex="-1" aria-labelledby="myModal3" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModal">
         <div class="modal-header">
           <p class="modal-title font">Helsinki</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -498,8 +543,8 @@
 </div>
 
 <div class="modal fade" id="myModal4" tabindex="-1" aria-labelledby="myModal4" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModal">
         <div class="modal-header">
           <p class="modal-title font">Helsinki</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -516,8 +561,8 @@
 </div>
 
 <div class="modal fade" id="myModal5" tabindex="-1" aria-labelledby="myModal5" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModal">
         <div class="modal-header">
           <p class="modal-title font">Helsinki</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -534,8 +579,8 @@
 </div>
 
 <div class="modal fade" id="myModal6" tabindex="-1" aria-labelledby="myModal6" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg smallPhotoModalDialog">
+      <div class="modal-content smallPhotoModal">
         <div class="modal-header">
           <p class="modal-title font">Helsinki</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -552,14 +597,14 @@
 </div>
 
 <div class="modal fade" id="myModal7" tabindex="-1" aria-labelledby="myModal7" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog modal-md">
       <div class="modal-content">
         <div class="modal-header">
           <p class="modal-title font">Helsinki</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body border-bottom-0">
-          <img src="images/sunghee2024/fi7B.jpg" alt="image">
+          <img src="images/sunghee2024/fi7A.jpg" alt="image">
         </div>
         <div class="modal-footer border-top-0">
           <button type="button" class="btn btn-default btn-prev font">Prev</button>
@@ -627,7 +672,7 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <p class="modal-title font">Finland</p>
+          <p class="modal-title font">Olavinlinna Castle, Finland</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body border-bottom-0">
