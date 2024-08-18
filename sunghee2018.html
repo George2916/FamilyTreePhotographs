@@ -17,6 +17,74 @@
    
 </head>
 
+<style> 
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .largePhotoModalDialog {margin-left: 30vw;}
+    .smallPhotoModalDialog {margin-left: 17vw;}	
+    .modal-title {color: green;}
+    .modal-header {height: 0;}
+    .largePhotoModalContent {max-width: 65vh;}
+    .smallPhotoModalContent {max-width: 99vh;}
+    .modal-footer {padding-top: 0;
+      padding-bottom: 0;
+      height: 50px;}
+    .modal-body {padding-bottom: 0;}
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .largePhotoModalDialog {margin-left: 30vw;}
+    .smallPhotoModalDialog {margin-left: 17vw;}	
+    .modal-title {color: red;}
+    .modal-header {height: 0;}
+    .largePhotoModalContent {max-width: 68vh;}
+    .smallPhotoModalContent {max-width: 700px;}
+    .modal-footer {padding-top: 0;
+      padding-bottom: 0;
+      height: 50px;}
+    .modal-body {padding-bottom: 0;}
+  }
+  
+  @media only screen and (min-width: 1200px) and (max-width: 1399px) {	
+    .largePhotoModalDialog {margin-left: 32vw;}
+    .smallPhotoModalDialog {margin-left: 23vw;}
+    .modal-title {color:yellow;}
+    .modal-header {height: 0;}
+    .largePhotoModalContent {max-width: 66vh;}
+    .smallPhotoModalContent {max-width: 700px;}
+    .modal-footer {padding-top: 0;
+      padding-bottom: 0;
+      height: 50px;}
+    .modal-body {padding-bottom: 0;}
+  }
+  
+  @media only screen and (min-width: 1400px) and (max-width: 1599px) {
+    .largePhotoModalDialog {margin-left: 35vw;}
+    .modal-title {color: brown;}
+    .modal-header {height: 0;}
+    .largePhotoModalContent {max-width: 58vh;}
+    .modal-footer {padding-top: 0;
+      padding-bottom: 0;
+      height: 50px;}
+    .modal-body {padding-bottom: 0;}
+  }
+  
+  @media only screen and (min-width: 1600px) and (max-width: 1999px) {
+    .largePhotoModalDialog {margin-left: 32vw;}
+    .smallPhotoModalDialog {margin-left: 23vw;}
+    .modal-title {color:orange;}
+    .modal-header {height: 0;}
+    .largePhotoModalContent {max-width: 51vh;}
+    .smallPhotoModalContent {max-width: 700px;}
+    .modal-footer {padding-top: 0;
+      padding-bottom: 0;
+      height: 50px;}
+    .modal-body {padding-bottom: 0;}
+  }
+  
+  
+  </style>
+
 <body>
 
 <div class="container">
@@ -571,8 +639,8 @@
 <div><!--modals for Japan-->
 
 <div class="modal fade" id="myModal1" tabindex="-1" aria-labelledby="myModal1" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Hokkaido</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -588,8 +656,8 @@
   </div> 
   
   <div class="modal fade" id="myModal2" tabindex="-1" aria-labelledby="myModal2" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Hokkaido</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -606,8 +674,8 @@
   </div>
 
   <div class="modal fade" id="myModal3" tabindex="-1" aria-labelledby="myModal3" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg smallPhotoModalDialog">
+      <div class="modal-content smallPhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Hokkaido</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -624,8 +692,8 @@
 </div>
 
 <div class="modal fade" id="myModal4" tabindex="-1" aria-labelledby="myModal4" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Hokkaido</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -642,8 +710,8 @@
 </div>
 
 <div class="modal fade" id="myModal5" tabindex="-1" aria-labelledby="myModal5" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Hokkaido</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -660,8 +728,8 @@
 </div>
 
 <div class="modal fade" id="myModal6" tabindex="-1" aria-labelledby="myModal6" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Kyoto</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -678,8 +746,8 @@
 </div>
 
 <div class="modal fade" id="myModal7" tabindex="-1" aria-labelledby="myModal7" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Shikoku</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -696,8 +764,8 @@
 </div>
 
 <div class="modal fade" id="myModal8" tabindex="-1" aria-labelledby="myModal8" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Shikoku</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -714,8 +782,8 @@
 </div>
 
 <div class="modal fade" id="myModal9" tabindex="-1" aria-labelledby="myModal9" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Shikoku</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -732,8 +800,8 @@
 </div>
 
 <div class="modal fade" id="myModal10" tabindex="-1" aria-labelledby="myModal10" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Shikoku</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -750,9 +818,9 @@
 </div>
 
 <div class="modal fade" id="myModal11" tabindex="-1" aria-labelledby="myModal11" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModalContent">
+        <div class="modal-header largePhotoModalContent">
           <p class="modal-title font">Shikoku</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
@@ -768,8 +836,8 @@
 </div>
 
 <div class="modal fade" id="myModal12" tabindex="-1" aria-labelledby="myModal12" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Tokyo</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -786,8 +854,8 @@
 </div>
 
 <div class="modal fade" id="myModal13" tabindex="-1" aria-labelledby="myModal13" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Tokyo</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -804,8 +872,8 @@
 </div>
 
 <div class="modal fade" id="myModal14" tabindex="-1" aria-labelledby="myModal13" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg smallPhotoModalDialog">
+      <div class="modal-content smallPhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Tokyo</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -825,8 +893,8 @@
 <div><!--modals for Northern Ireland and Scotland-->
 
   <div class="modal fade" id="niModal1" tabindex="-1" aria-labelledby="niModal1" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Northern Ireland</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -842,8 +910,8 @@
   </div> 
   
   <div class="modal fade" id="niModal2" tabindex="-1" aria-labelledby="niModal2" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Northern Ireland</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -860,8 +928,8 @@
   </div>
   
   <div class="modal fade" id="niModal3" tabindex="-1" aria-labelledby="niModal3" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Northern Ireland</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -878,8 +946,8 @@
   </div>
   
   <div class="modal fade" id="niModal4" tabindex="-1" aria-labelledby="niModal4" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Giant's Causeway, NI</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -896,8 +964,8 @@
   </div>
   
   <div class="modal fade" id="niModal5" tabindex="-1" aria-labelledby="niModal5" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Giant's Causeway, NI</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -914,8 +982,8 @@
   </div>
   
   <div class="modal fade" id="niModal6" tabindex="-1" aria-labelledby="niModal6" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Giant's Causeway, NI</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -932,8 +1000,8 @@
   </div>
   
   <div class="modal fade" id="niModal7" tabindex="-1" aria-labelledby="niModal7" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Northern Ireland</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -950,8 +1018,8 @@
   </div>
   
   <div class="modal fade" id="niModal8" tabindex="-1" aria-labelledby="niModal8" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg smallPhotoModalDialog">
+      <div class="modal-content smallPhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Northern Ireland</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -968,8 +1036,8 @@
   </div>
   
   <div class="modal fade" id="niModal9" tabindex="-1" aria-labelledby="niModal9" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg smallPhotoModalDialog">
+      <div class="modal-content smallPhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Belfast</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -986,8 +1054,8 @@
   </div>
   
   <div class="modal fade" id="niModal10" tabindex="-1" aria-labelledby="niModal10" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Castle Ward, NI<p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1004,8 +1072,8 @@
   </div>
   
   <div class="modal fade" id="niModal11" tabindex="-1" aria-labelledby="niModal11" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Castle Ward, NI</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1022,8 +1090,8 @@
   </div>
   
   <div class="modal fade" id="niModal12" tabindex="-1" aria-labelledby="niModal12" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Edinburgh<p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1040,8 +1108,8 @@
   </div>
   
   <div class="modal fade" id="niModal13" tabindex="-1" aria-labelledby="niModal13" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Edinburgh<p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1058,8 +1126,8 @@
   </div>
   
   <div class="modal fade" id="niModal14" tabindex="-1" aria-labelledby="niModal4" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Edinburgh</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1076,8 +1144,8 @@
   </div>
   
   <div class="modal fade" id="niModal15" tabindex="-1" aria-labelledby="niModal15" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Kyle of Lochalsh, Scotland</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1094,8 +1162,8 @@
   </div>
   
   <div class="modal fade" id="niModal16" tabindex="-1" aria-labelledby="niModal16" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Isle of Skye</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1112,8 +1180,8 @@
   </div>
   
   <div class="modal fade" id="niModal17" tabindex="-1" aria-labelledby="niModal17" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Isle of Skye</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1130,8 +1198,8 @@
   </div>
 
   <div class="modal fade" id="niModal18" tabindex="-1" aria-labelledby="niModal18" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg smallPhotoModalDialog">
+      <div class="modal-content smallPhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Isle of Skye</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1148,8 +1216,8 @@
   </div>
   
   <div class="modal fade" id="niModal19" tabindex="-1" aria-labelledby="niModal19" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Wick, Scotland</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1166,8 +1234,8 @@
   </div>
   
   <div class="modal fade" id="niModal20" tabindex="-1" aria-labelledby="niModal20" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg largePhotoModalDialog">
+      <div class="modal-content largePhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">John O'Groats, Scotland</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1184,8 +1252,8 @@
   </div>
   
   <div class="modal fade" id="niModal21" tabindex="-1" aria-labelledby="niModal21" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg smallPhotoModalDialog">
+      <div class="modal-content smallPhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">John O'Groats, Scotland</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1202,8 +1270,8 @@
   </div>
 
   <div class="modal fade" id="niModal22" tabindex="-1" aria-labelledby="niModal22" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg smallPhotoModalDialog">
+      <div class="modal-content smallPhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Wick, Scotland</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1220,8 +1288,8 @@
   </div>
   
   <div class="modal fade" id="niModal23" tabindex="-1" aria-labelledby="niModal23" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg smallPhotoModalDialog">
+      <div class="modal-content smallPhotoModalContent">
         <div class="modal-header">
           <p class="modal-title font">Wick, Scotland</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
