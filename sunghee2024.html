@@ -22,7 +22,6 @@
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .largePhotoModalDialog {margin-left: 30vw;}
   .smallPhotoModalDialog {margin-left: 17vw;}	
-	.modal-title {color: green;}
   .modal-header {height: 0;}
   .largePhotoModalContent {max-width: 65vh;}
   .smallPhotoModalContent {max-width: 99vh;}
@@ -36,7 +35,6 @@
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .largePhotoModalDialog {margin-left: 30vw;}
   .smallPhotoModalDialog {margin-left: 17vw;}	
-	.modal-title {color: red;}
   .modal-header {height: 0;}
   .largePhotoModalContent {max-width: 68vh;}
   .smallPhotoModalContent {max-width: 700px;}
@@ -50,7 +48,6 @@
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {	
   .largePhotoModalDialog {margin-left: 32vw;}
   .smallPhotoModalDialog {margin-left: 23vw;}
-	.modal-title {color:yellow;}
   .modal-header {height: 0;}
   .largePhotoModalContent {max-width: 66vh;}
   .smallPhotoModalContent {max-width: 700px;}
@@ -63,7 +60,6 @@
 
 @media only screen and (min-width: 1400px) and (max-width: 1599px) {
   .largePhotoModalDialog {margin-left: 35vw;}
-	.modal-title {color:red;}
   .modal-header {height: 0;}
   .largePhotoModalContent {max-width: 58vh;}
   .modal-footer {padding-top: 0;
@@ -76,7 +72,6 @@
 @media only screen and (min-width: 1600px) and (max-width: 1999px) {
   .largePhotoModalDialog {margin-left: 32vw;}
   .smallPhotoModalDialog {margin-left: 23vw;}
-	.modal-title {color:orange;}
   .modal-header {height: 0;}
   .largePhotoModalContent {max-width: 51vh;}
   .smallPhotoModalContent {max-width: 700px;}
@@ -514,9 +509,14 @@
     </div>
     <div class="photo">
         <a data-bs-toggle="modal" data-bs-target="#usModal10">
-            <img src="images/sunghee2024/us10A.jpg">
+            <img src="images/sunghee2024/us10.jpg">
         </a>
-    </div>    
+    </div>   
+    <div class="photo">
+      <a data-bs-toggle="modal" data-bs-target="#usModal11">
+          <img src="images/sunghee2024/us11.jpg">
+      </a>
+  </div> 
   </div><!--/.scrollArea for US-->
 
 <div><!--modals for Europe-->
@@ -1752,11 +1752,29 @@
   <div class="modal-dialog modal-lg largePhotoModalDialog">
     <div class="modal-content largePhotoModalContent">
       <div class="modal-header">
+        <p class="modal-title font">Charleston, SC</p>
+        <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body border-bottom-0">
+        <img src="images/sunghee2024/us10.jpg" alt="image">
+      </div>
+      <div class="modal-footer border-top-0">
+        <button type="button" class="btn btn-default btn-prev font">Prev</button>
+        <button type="button" class="btn btn-default btn-next font">Next</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="usModal11" tabindex="-1" aria-labelledby="usModal11" aria-hidden="true">
+  <div class="modal-dialog modal-lg largePhotoModalDialog">
+    <div class="modal-content largePhotoModalContent">
+      <div class="modal-header">
         <p class="modal-title font">Charleston, SC<p>
         <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body border-bottom-0">
-        <img src="images/sunghee2024/us10B.jpg" alt="image">
+        <img src="images/sunghee2024/us11.jpg" alt="image">
       </div>
       <div class="modal-footer border-top-0">
         <button type="button" class="btn btn-default btn-prev font">Prev</button>
