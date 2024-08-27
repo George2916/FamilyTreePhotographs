@@ -208,6 +208,66 @@ padding-left: 3px;}
   font-size: 100%;
 }
 
+/* adjust size of modals based on screen size - assumes 16/9 ratio */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .largePhotoModalDialog {margin-left: 30vw;}
+  .smallPhotoModalDialog {margin-left: 17vw;}
+  .modal-header {height: 0;}
+  .largePhotoModalContent {max-width: 65vh;}
+  .smallPhotoModalContent {max-width: 99vh;}
+  .modal-footer {padding-top: 0;
+    padding-bottom: 0;
+    height: 50px;}
+  .modal-body {padding-bottom: 0;}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .largePhotoModalDialog {margin-left: 30vw;}
+  .smallPhotoModalDialog {margin-left: 17vw;}	
+  .modal-header {height: 0;}
+  .largePhotoModalContent {max-width: 68vh;}
+  .smallPhotoModalContent {max-width: 700px;}
+  .modal-footer {padding-top: 0;
+    padding-bottom: 0;
+    height: 50px;}
+  .modal-body {padding-bottom: 0;}
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {	
+  .largePhotoModalDialog {margin-left: 32vw;}
+  .smallPhotoModalDialog {margin-left: 23vw;}
+  .modal-header {height: 0;}
+  .largePhotoModalContent {max-width: 66vh;}
+  .smallPhotoModalContent {max-width: 700px;}
+  .modal-footer {padding-top: 0;
+    padding-bottom: 0;
+    height: 50px;}
+  .modal-body {padding-bottom: 0;}
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+  .largePhotoModalDialog {margin-left: 35vw;}
+  .modal-header {height: 0;}
+  .largePhotoModalContent {max-width: 58vh;}
+  .modal-footer {padding-top: 0;
+    padding-bottom: 0;
+    height: 50px;}
+  .modal-body {padding-bottom: 0;}
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1999px) {
+  .largePhotoModalDialog {margin-left: 32vw;}
+  .smallPhotoModalDialog {margin-left: 23vw;}
+  .modal-header {height: 0;}
+  .largePhotoModalContent {max-width: 51vh;}
+  .smallPhotoModalContent {max-width: 700px;}
+  .modal-footer {padding-top: 0;
+    padding-bottom: 0;
+    height: 50px;}
+  .modal-body {padding-bottom: 0;}
+}
+
 /* styling for Previous and Next buttons at bottom of page */
 
 .prevBtn {

@@ -17,74 +17,6 @@
    
 </head>
 
-<style> 
-
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .largePhotoModalDialog {margin-left: 30vw;}
-    .smallPhotoModalDialog {margin-left: 17vw;}	
-    .modal-title {color: green;}
-    .modal-header {height: 0;}
-    .largePhotoModalContent {max-width: 65vh;}
-    .smallPhotoModalContent {max-width: 99vh;}
-    .modal-footer {padding-top: 0;
-      padding-bottom: 0;
-      height: 50px;}
-    .modal-body {padding-bottom: 0;}
-  }
-  
-  @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .largePhotoModalDialog {margin-left: 30vw;}
-    .smallPhotoModalDialog {margin-left: 17vw;}	
-    .modal-title {color: red;}
-    .modal-header {height: 0;}
-    .largePhotoModalContent {max-width: 68vh;}
-    .smallPhotoModalContent {max-width: 700px;}
-    .modal-footer {padding-top: 0;
-      padding-bottom: 0;
-      height: 50px;}
-    .modal-body {padding-bottom: 0;}
-  }
-  
-  @media only screen and (min-width: 1200px) and (max-width: 1399px) {	
-    .largePhotoModalDialog {margin-left: 32vw;}
-    .smallPhotoModalDialog {margin-left: 23vw;}
-    .modal-title {color:yellow;}
-    .modal-header {height: 0;}
-    .largePhotoModalContent {max-width: 66vh;}
-    .smallPhotoModalContent {max-width: 700px;}
-    .modal-footer {padding-top: 0;
-      padding-bottom: 0;
-      height: 50px;}
-    .modal-body {padding-bottom: 0;}
-  }
-  
-  @media only screen and (min-width: 1400px) and (max-width: 1599px) {
-    .largePhotoModalDialog {margin-left: 35vw;}
-    .modal-title {color: brown;}
-    .modal-header {height: 0;}
-    .largePhotoModalContent {max-width: 58vh;}
-    .modal-footer {padding-top: 0;
-      padding-bottom: 0;
-      height: 50px;}
-    .modal-body {padding-bottom: 0;}
-  }
-  
-  @media only screen and (min-width: 1600px) and (max-width: 1999px) {
-    .largePhotoModalDialog {margin-left: 32vw;}
-    .smallPhotoModalDialog {margin-left: 23vw;}
-    .modal-title {color:orange;}
-    .modal-header {height: 0;}
-    .largePhotoModalContent {max-width: 51vh;}
-    .smallPhotoModalContent {max-width: 700px;}
-    .modal-footer {padding-top: 0;
-      padding-bottom: 0;
-      height: 50px;}
-    .modal-body {padding-bottom: 0;}
-  }
-  
-  
-  </style>
-
 <body>
 
 <div class="container">
@@ -115,11 +47,12 @@
 
         <div class="btn-group">          
         <div class="dropdown">
-          <button class="btn-secondary dropdown-toggle NNN" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-            <span class="font">Ko Family Tree</span>
+          <button class="btn-secondary dropdown-toggle OOO" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="font">Linked Web Sites</span>
           </button>
           <ol class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <li><a class="dropdown-item font" href="https://george2916.github.io/GreensladeFamilyTree/familyTreeKo.html">Ko Family Tree&nbsp;&#x2197;</a></li>
+            <li><a class="dropdown-item font" href="https://george2916.github.io/Sarah-Jane-and-Laurel-Marie/">The Lives of Sarah Jane and Laurel Marie - <br>&nbsp;&nbsp;&nbsp;An Aunt's Perspective&nbsp;&#x2197;</a></li>
           </ol>            
         </div><!--.dropdown-->
         </div><!--/.btn-group-->    
@@ -1712,8 +1645,8 @@
 <div><!--modals for Spain-->
 
   <div class="modal fade" id="spModal1" tabindex="-1" aria-labelledby="spModal1" aria-hidden="true">
-      <div class="modal-dialog modal-lg ">
-        <div class="modal-content">
+      <div class="modal-dialog modal-lg  largePhotoModalDialog">
+        <div class="modal-content largePhotoModalContent">
           <div class="modal-header">
             <p class="modal-title font">Madrid</p>
             <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1729,8 +1662,8 @@
     </div> 
     
     <div class="modal fade" id="spModal2" tabindex="-1" aria-labelledby="spModal2" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
+      <div class="modal-dialog modal-lg largePhotoModalDialog">
+        <div class="modal-content largePhotoModalContent">
           <div class="modal-header">
             <p class="modal-title font">Madrid</p>
             <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1747,8 +1680,8 @@
     </div>
   
     <div class="modal fade" id="spModal3" tabindex="-1" aria-labelledby="spModal3" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
+      <div class="modal-dialog modal-lg smallPhotoModalDialog">
+        <div class="modal-content smallPhotoModalContent">
           <div class="modal-header">
             <p class="modal-title font">Toledo</p>
             <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1765,8 +1698,8 @@
   </div>
   
   <div class="modal fade" id="spModal4" tabindex="-1" aria-labelledby="spModal4" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
+      <div class="modal-dialog modal-lg largePhotoModalDialog">
+        <div class="modal-content largePhotoModalContent">
           <div class="modal-header">
             <p class="modal-title font">Toledo</p>
             <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1783,8 +1716,8 @@
   </div>
   
   <div class="modal fade" id="spModal5" tabindex="-1" aria-labelledby="spModal5" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
+      <div class="modal-dialog modal-lg smallPhotoModalDialog">
+        <div class="modal-content smallPhotoModalContent">
           <div class="modal-header">
             <p class="modal-title font">Madrid</p>
             <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1801,8 +1734,8 @@
   </div>
   
   <div class="modal fade" id="spModal6" tabindex="-1" aria-labelledby="spModal6" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
+      <div class="modal-dialog modal-lg smallPhotoModalDialog">
+        <div class="modal-content smallPhotoModalContent">
           <div class="modal-header">
             <p class="modal-title font">Madrid</p>
             <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1819,8 +1752,8 @@
   </div>
   
   <div class="modal fade" id="spModal7" tabindex="-1" aria-labelledby="spModal7" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
+      <div class="modal-dialog modal-lg smallPhotoModalDialog">
+        <div class="modal-content smallPhotoModalContent">
           <div class="modal-header">
             <p class="modal-title font">Madrid</p>
             <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1840,8 +1773,8 @@
 <div><!--modals for United States-->
 
 <div class="modal fade" id="usModal1" tabindex="-1" aria-labelledby="usModal1" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+  <div class="modal-dialog modal-lg smallPhotoModalDialog">
+    <div class="modal-content smallPhotoModalContent">
       <div class="modal-header">
         <p class="modal-title font">North Carolina</p>
         <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1857,8 +1790,8 @@
 </div> 
 
 <div class="modal fade" id="usModal2" tabindex="-1" aria-labelledby="usModal2" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+  <div class="modal-dialog modal-lg largePhotoModalDialog">
+    <div class="modal-content largePhotoModalContent">
       <div class="modal-header">
         <p class="modal-title font">Nashville</p>
         <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1875,8 +1808,8 @@
 </div>
 
 <div class="modal fade" id="usModal3" tabindex="-1" aria-labelledby="usModal3" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+  <div class="modal-dialog modal-lg smallPhotoModalDialog">
+    <div class="modal-content smallPhotoModalContent">
       <div class="modal-header">
         <p class="modal-title font">Nashville</p>
         <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1893,10 +1826,10 @@
 </div>
 
 <div class="modal fade" id="usModal4" tabindex="-1" aria-labelledby="usModal4" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+  <div class="modal-dialog modal-lg largePhotoModalDialog">
+    <div class="modal-content largePhotoModalContent">
       <div class="modal-header">
-        <p class="modal-title font">The Hermitage</p>
+        <p class="modal-title font">The Hermitage, Tennessee</p>
         <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body border-bottom-0">
@@ -1911,8 +1844,8 @@
 </div>
 
 <div class="modal fade" id="usModal5" tabindex="-1" aria-labelledby="usModal5" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+  <div class="modal-dialog modal-lg smallPhotoModalDialog">
+    <div class="modal-content smallPhotoModalContent">
       <div class="modal-header">
         <p class="modal-title font">Shiloh Battlefield</p>
         <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1929,8 +1862,8 @@
 </div>
 
 <div class="modal fade" id="usModal6" tabindex="-1" aria-labelledby="usModal6" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+  <div class="modal-dialog modal-lg smallPhotoModalDialog">
+    <div class="modal-content smallPhotoModalContent">
       <div class="modal-header">
         <p class="modal-title font">Graceland</p>
         <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1946,9 +1879,9 @@
   </div>
 </div>
 
-<div class="modal fade" id="usModal7" tabindex="-1" aria-labelledby="usModal7" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+<div class="modal fade" id="usModal7 smallPhotoModalDialog" tabindex="-1" aria-labelledby="usModal7" aria-hidden="true">
+  <div class="modal-dialog modal-lg largePhotoModalDialog">
+    <div class="modal-content largePhotoModalContent">
       <div class="modal-header">
         <p class="modal-title font">Graceland</p>
         <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1965,10 +1898,10 @@
 </div>
 
 <div class="modal fade" id="usModal8" tabindex="-1" aria-labelledby="usModal8" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+  <div class="modal-dialog modal-lg largePhotoModalDialog">
+    <div class="modal-content largePhotoModalContent">
       <div class="modal-header">
-        <p class="modal-title font">Memphis</p>
+        <p class="modal-title font">Sun Studios, Memphis</p>
         <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body border-bottom-0">
@@ -1983,8 +1916,8 @@
 </div>
 
 <div class="modal fade" id="usModal9" tabindex="-1" aria-labelledby="usModal9" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+  <div class="modal-dialog modal-lg smallPhotoModalDialog">
+    <div class="modal-content smallPhotoModalContent">
       <div class="modal-header">
         <p class="modal-title font">Memphis</p>
         <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -2001,8 +1934,8 @@
 </div>
 
 <div class="modal fade" id="usModal10" tabindex="-1" aria-labelledby="usModal10" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+  <div class="modal-dialog modal-lg largePhotoModalDialog">
+    <div class="modal-content largePhotoModalContent">
       <div class="modal-header">
         <p class="modal-title font">West Virginia<p>
         <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -2019,8 +1952,8 @@
 </div>
 
 <div class="modal fade" id="usModal11" tabindex="-1" aria-labelledby="usModal11" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+  <div class="modal-dialog modal-lg largePhotoModalDialog">
+    <div class="modal-content largePhotoModalContent">
       <div class="modal-header">
         <p class="modal-title font">West Virginia</p>
         <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -2037,8 +1970,8 @@
 </div>
 
 <div class="modal fade" id="usModal12" tabindex="-1" aria-labelledby="usModal12" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+  <div class="modal-dialog modal-lg largePhotoModalDialog">
+    <div class="modal-content largePhotoModalContent">
       <div class="modal-header">
         <p class="modal-title font">West Virginia<p>
         <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -2055,8 +1988,8 @@
 </div>
 
 <div class="modal fade" id="usModal13" tabindex="-1" aria-labelledby="usModal13" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+  <div class="modal-dialog modal-lg largePhotoModalDialog">
+    <div class="modal-content largePhotoModalContent">
       <div class="modal-header">
         <p class="modal-title font">Philadelphia</p>
         <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -2073,8 +2006,8 @@
 </div>
 
 <div class="modal fade" id="usModal14" tabindex="-1" aria-labelledby="usModal14" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+  <div class="modal-dialog modal-lg largePhotoModalDialog">
+    <div class="modal-content largePhotoModalContent">
       <div class="modal-header">
         <p class="modal-title font">Philadelphia</p>
         <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -2091,8 +2024,8 @@
 </div>
 
 <div class="modal fade" id="usModal15" tabindex="-1" aria-labelledby="usModal15" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+  <div class="modal-dialog modal-lg largePhotoModalDialog">
+    <div class="modal-content largePhotoModalContent">
       <div class="modal-header">
         <p class="modal-title font">Massachusetts</p>
         <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -2109,8 +2042,8 @@
 </div>
 
 <div class="modal fade" id="usModal16" tabindex="-1" aria-labelledby="usModal16" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+  <div class="modal-dialog modal-lg largePhotoModalDialog">
+    <div class="modal-content largePhotoModalContent">
       <div class="modal-header">
         <p class="modal-title font">Massachusetts</p>
         <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -2127,8 +2060,8 @@
 </div>
 
 <div class="modal fade" id="usModal17" tabindex="-1" aria-labelledby="usModal17" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+  <div class="modal-dialog modal-lg largePhotoModalDialog">
+    <div class="modal-content largePhotoModalContent">
       <div class="modal-header">
         <p class="modal-title font">Massachusetts</p>
         <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -2146,8 +2079,8 @@
 
 
 <div class="modal fade" id="usModal18" tabindex="-1" aria-labelledby="usModal18" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+  <div class="modal-dialog modal-lg largePhotoModalDialog">
+    <div class="modal-content largePhotoModalContent">
       <div class="modal-header">
         <p class="modal-title font">Pennsylvania</p>
         <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -2164,8 +2097,8 @@
 </div>
 
 <div class="modal fade" id="usModal19" tabindex="-1" aria-labelledby="usModal19" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+  <div class="modal-dialog modal-lg largePhotoModalDialog">
+    <div class="modal-content largePhotoModalContent">
       <div class="modal-header">
         <p class="modal-title font">Pennsylvania<p>
         <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -2182,8 +2115,8 @@
 </div>
 
 <div class="modal fade" id="usModal20" tabindex="-1" aria-labelledby="usModal20" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+  <div class="modal-dialog modal-lg largePhotoModalDialog">
+    <div class="modal-content largePhotoModalContent">
       <div class="modal-header">
         <p class="modal-title font">Connecticut</p>
         <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -2200,8 +2133,8 @@
 </div>
 
 <div class="modal fade" id="usModal21" tabindex="-1" aria-labelledby="usModal21" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+  <div class="modal-dialog modal-lg largePhotoModalDialog">
+    <div class="modal-content largePhotoModalContent">
       <div class="modal-header">
         <p class="modal-title font">Hartford<p>
         <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -2218,8 +2151,8 @@
 </div>
 
 <div class="modal fade" id="usModal22" tabindex="-1" aria-labelledby="usModal22" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+  <div class="modal-dialog modal-lg smallPhotoModalDialog">
+    <div class="modal-content smallPhotoModalContent">
       <div class="modal-header">
         <p class="modal-title font">Hartford</p>
         <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -2236,8 +2169,8 @@
 </div>
 
 <div class="modal fade" id="usModal23" tabindex="-1" aria-labelledby="usModal23" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+  <div class="modal-dialog modal-lg largePhotoModalDialog">
+    <div class="modal-content largePhotoModalContent">
       <div class="modal-header">
         <p class="modal-title font">Bolton Landing,NY</p>
         <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -2254,8 +2187,8 @@
 </div>
 
 <div class="modal fade" id="usModal24" tabindex="-1" aria-labelledby="usModal24" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+  <div class="modal-dialog modal-lg largePhotoModalDialog">
+    <div class="modal-content largePhotoModalContent">
       <div class="modal-header">
         <p class="modal-title font">Brant Lake, New York</p>
         <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -2272,8 +2205,8 @@
 </div>
 
 <div class="modal fade" id="usModal25" tabindex="-1" aria-labelledby="usModal25" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+  <div class="modal-dialog modal-lg largePhotoModalDialog">
+    <div class="modal-content largePhotoModalContent">
       <div class="modal-header">
         <p class="modal-title font">Brant Lake, NY</p>
         <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -2290,8 +2223,8 @@
 </div>
 
 <div class="modal fade" id="usModal26" tabindex="-1" aria-labelledby="usModal26" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+  <div class="modal-dialog modal-lg smallPhotoModalDialog">
+    <div class="modal-content smallPhotoModalContent">
       <div class="modal-header">
         <p class="modal-title font">Boton Landing,NY</p>
         <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
