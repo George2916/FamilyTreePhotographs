@@ -9,17 +9,130 @@
 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
-    <title>Sunghee - 2018</title>
+    <title>Sunghee - 2025 Test2</title>
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> 
     <link rel="stylesheet" type="text/css" href="css/myStyle3.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">  
+    
+    <script language="javascript">
+      
+      
+      var tries;
+
+for (tries = 2; tries >= 0; tries--) {
+    
+    let userInput = prompt("Please enter the password to view the Greenslade family tree (and many others). If you do not have the password, you can request it from GreensladeFamilyTree@gmail.com.\n\nHint: The password is the name of one of George's nephews.");
+        if (userInput.toLowerCase() === "colin" || userInput.toLowerCase() === "aidan" || userInput.toLowerCase() === "harrison") {
+            alert("Welcome.");
+            break;
+        } else if (tries == 0) {
+            alert("You don't have any attempts left.");
+            window.location="https://www.google.com";
+        }  else {
+            alert("Incorrect password entered. You have " + tries + " attempt(s) left.");
+        }
+}
+
+    
+    </script>
    
 </head>
 
 <body>
 
 <div class="container">
+
+
+
+
+<!--hide
+        
+    var password;
+    var correctPassword="harrison";
+    let i=1;
+
+    password=prompt('Please enter the password to view the Greenslade family tree (and many others). If you do not have the password, you can request it from GreensladeFamilyTree@gmail.com.');
+
+   
+    while (i<3) {
+    if (password.toLowerCase()==correctPassword) 
+        {
+          alert('Password is correct. Click to enter.');
+          i++;
+        }
+        
+      }
+
+    
+    
+        
+
+    else 
+    { 
+        window.location="https://www.google.com";
+    }
+        
+     
+
+
+
+
+
+    var userInput;
+var entryCount = 0;
+var entryLimit = 3;
+correctPassword="Harrison";
+
+
+  if (entryCount < entryLimit) {
+
+    userInput=prompt('Please enter the password to view the Greenslade family tree (and many others). If you do not have the password, you can request it from GreensladeFamilyTree@gmail.com.');
+
+
+
+    if (userInput != correctPassword){
+      alert('Password is incorrect. Try again.');
+         
+      entryCount++;
+    } else {
+      // success!
+      entryCount = 0;
+      alert('Password is correct. Click to enter.');
+    }
+  } else {
+      alert('Out of entries');
+  }
+        
+        
+for ( let i = 3; i > 0;  ) {
+  let password = prompt("What is the password?")  
+  if (password.toUpperCase() !== "BINGO" && password.toUpperCase() != "TIMES" && i > 1 ) {
+    alert("Try again");
+    i--;
+  } else if (i == 2) {
+    alert("You have one more attempt left.");
+    i--;
+  } else if (i == 1 && password.toUpperCase() !== "BINGO" && password.toUpperCase() !== "TIMES") {
+    alert("No more tries left");
+    window.location="https://www.google.com";
+  } else {
+    alert("You may enter");
+    i = 0;
+  }
+}  
+
+ 
+
+
+
+
+
+
+        -->
+
+
+
 
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
@@ -51,6 +164,7 @@
             <span class="font">Linked Web Sites</span>
           </button>
           <ol class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item font" href="https://Instagram.com/chiimamanyc">Sunghee's Instagram page&nbsp;&#x2197;</a></li>
             <li><a class="dropdown-item font" href="https://george2916.github.io/GreensladeFamilyTree/familyTreeKo.html">Ko Family Tree&nbsp;&#x2197;</a></li>
             <li><a class="dropdown-item font" href="https://george2916.github.io/Sarah-Jane-and-Laurel-Marie/">The Lives of Sarah Jane and Laurel Marie - <br>&nbsp;&nbsp;&nbsp;An Aunt's Perspective&nbsp;&#x2197;</a></li>
           </ol>            
