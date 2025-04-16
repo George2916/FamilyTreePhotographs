@@ -22,8 +22,17 @@
 
 for (tries = 2; tries >= 0; tries--) {
     
-    let userInput = prompt("Please enter the password to view the Greenslade family tree (and many others). If you do not have the password, you can request it from GreensladeFamilyTree@gmail.com.\n\nHint: The password is the name of one of George's nephews.");
-        if (userInput.toLowerCase() === "colin" || userInput.toLowerCase() === "aidan" || userInput.toLowerCase() === "harrison") {
+    let userInput = prompt("Please enter the password to view the Greenslade family tree (and many others). If you do not have the password, you can request it from GreensladeFamilyTree@gmail.com.\n\nHint: Enter the name of any one of George's nieces or nephews.");
+
+    if (userInput == null || userInput == "") {
+      if (tries == 0) {
+            alert("You don't have any attempts left.");
+            window.location="https://www.google.com";
+        }  else {
+            alert("Incorrect password entered. You have " + tries + " attempt(s) left.");
+        }
+        }
+        else if (userInput.toLowerCase() === "haley" || userInput.toLowerCase() === "abigail" || userInput.toLowerCase() === "sarah" || userInput.toLowerCase() === "laurel" || userInput.toLowerCase() === "colin" || userInput.toLowerCase() === "aidan" || userInput.toLowerCase() === "harrison") {
             alert("Welcome.");
             break;
         } else if (tries == 0) {
@@ -42,97 +51,6 @@ for (tries = 2; tries >= 0; tries--) {
 <body>
 
 <div class="container">
-
-
-
-
-<!--hide
-        
-    var password;
-    var correctPassword="harrison";
-    let i=1;
-
-    password=prompt('Please enter the password to view the Greenslade family tree (and many others). If you do not have the password, you can request it from GreensladeFamilyTree@gmail.com.');
-
-   
-    while (i<3) {
-    if (password.toLowerCase()==correctPassword) 
-        {
-          alert('Password is correct. Click to enter.');
-          i++;
-        }
-        
-      }
-
-    
-    
-        
-
-    else 
-    { 
-        window.location="https://www.google.com";
-    }
-        
-     
-
-
-
-
-
-    var userInput;
-var entryCount = 0;
-var entryLimit = 3;
-correctPassword="Harrison";
-
-
-  if (entryCount < entryLimit) {
-
-    userInput=prompt('Please enter the password to view the Greenslade family tree (and many others). If you do not have the password, you can request it from GreensladeFamilyTree@gmail.com.');
-
-
-
-    if (userInput != correctPassword){
-      alert('Password is incorrect. Try again.');
-         
-      entryCount++;
-    } else {
-      // success!
-      entryCount = 0;
-      alert('Password is correct. Click to enter.');
-    }
-  } else {
-      alert('Out of entries');
-  }
-        
-        
-for ( let i = 3; i > 0;  ) {
-  let password = prompt("What is the password?")  
-  if (password.toUpperCase() !== "BINGO" && password.toUpperCase() != "TIMES" && i > 1 ) {
-    alert("Try again");
-    i--;
-  } else if (i == 2) {
-    alert("You have one more attempt left.");
-    i--;
-  } else if (i == 1 && password.toUpperCase() !== "BINGO" && password.toUpperCase() !== "TIMES") {
-    alert("No more tries left");
-    window.location="https://www.google.com";
-  } else {
-    alert("You may enter");
-    i = 0;
-  }
-}  
-
- 
-
-
-
-
-
-
-        -->
-
-
-
 
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">

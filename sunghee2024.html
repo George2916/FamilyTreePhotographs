@@ -14,6 +14,37 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> 
     <link rel="stylesheet" type="text/css" href="css/myStyle3.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">    
+  
+    <script language="javascript">
+        
+        var tries;
+
+        for (tries = 2; tries >= 0; tries--) {
+    
+            let userInput = prompt("Please enter the password to view the Greenslade family tree (and many others). If you do not have the password, you can request it from GreensladeFamilyTree@gmail.com.\n\nHint: Enter the name of any one of George's nieces or nephews.");
+
+            if (userInput == null || userInput == "") {
+                if (tries == 0) {
+                      alert("You don't have any attempts left.");
+                      window.location="https://www.google.com";
+                  }  else {
+                      alert("Incorrect password entered. You have " + tries + " attempt(s) left.");
+                  }
+            }
+            else if (userInput.toLowerCase() === "haley" || userInput.toLowerCase() === "abigail" || userInput.toLowerCase() === "sarah" || userInput.toLowerCase() === "laurel" || userInput.toLowerCase() === "colin" || userInput.toLowerCase() === "aidan" || userInput.toLowerCase() === "harrison") {
+                alert("Welcome.");
+                break;
+            } 
+            else if (tries == 0) {
+                alert("You don't have any attempts left.");
+                window.location="https://www.google.com";
+            }  
+            else {
+                alert("Incorrect password entered. You have " + tries + " attempt(s) left.");
+            }
+        }
+
+    </script>
    
 </head>
 
@@ -50,10 +81,11 @@
             <button class="btn-secondary dropdown-toggle OOO" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
               <span class="font">Linked Web Sites</span>
             </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <ol class="dropdown-menu" aria-labelledby="dropdownMenuButton">
               <li><a class="dropdown-item font" href="https://george2916.github.io/GreensladeFamilyTree/familyTreeKo.html">Ko Family Tree&nbsp;&#x2197;</a></li>
               <li><a class="dropdown-item font" href="https://george2916.github.io/Sarah-Jane-and-Laurel-Marie/">The Lives of Sarah Jane and Laurel Marie - <br>&nbsp;&nbsp;&nbsp;An Aunt's Perspective&nbsp;&#x2197;</a></li>
-            </ul>
+              <li><a class="dropdown-item font" href="https://Instagram.com/chiimamanyc">Sunghee's Instagram page&nbsp;&#x2197;</a></li>
+            </ol>
           </div><!--/.dropdown--> 
         </div><!--/.brn-group-->         
         
@@ -1843,7 +1875,7 @@
     <div class="modal-dialog modal-lg largePhotoModalDialog">
       <div class="modal-content largePhotoModalContent">
         <div class="modal-header">
-          <p class="modal-title font">Seoul</p>
+          <p class="modal-title font">Eating offal, Seoul</p>
           <button type="button" class="btn-close font" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body border-bottom-0">
