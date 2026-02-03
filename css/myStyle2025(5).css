@@ -1,0 +1,378 @@
+FROM PRECEDENT:
+
+/*
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.bg-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(8px);
+  object-fit: cover;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 1000px;
+}
+.carousel {
+  display: flex;
+  gap: 20px;
+}
+*/
+
+
+
+
+.carousel.sliding-transition {
+  transition: all 0.5s ease-in-out;
+}
+.arrow {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  /* The font size is better not to exceed 35px, as the higher the value the arrows won't be centered vertically (although we're using flex and centering the element well ) */
+  background-color: #ddd;
+  opacity: 0.5;
+  border-radius: 50%;
+  top: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.arrow span {
+  display: inline-block;
+}
+.left-arrow {
+  left: 20px;
+}
+.right-arrow {
+  right: 20px;
+} 
+
+.arrow:hover {
+  opacity: 1;
+  background-color: white;
+}
+
+FROM MYSTYLE3.carousel.sliding-transition
+
+/* styling for sunghee2018.html, sunghee2019-20.html and sunghee2024.html */
+
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+.font, .fontGAG { 
+  font-family: 'Merriweather', 'Georgia', var(--bs-body-font-family);
+}
+
+.navbar {
+  background: #FF7034;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;   
+}
+
+.dropdown-menu {
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	background: linear-gradient(#00FFFF, #ccfff2);
+	background: -moz-linear-gradient(#00FFFF, #ccfff2);
+	background: -webkit-linear-gradient(#00FFFF, #ccfff2);
+	background: -o-linear-gradient(#00FFFF, #ccfff2);
+}
+
+.dropdown-item:hover {
+	background: #00FFFF;
+	border-radius: 15px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+#dropdownMenuButton {
+    background: #FF7034;
+    border-color: #FF7034;
+    border-top: 20px;
+    color: black;  
+}
+
+.MMM {
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 991px) {
+  .NNN {
+     margin-top: 2px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .NNN {
+     margin-top: 12px;
+  }
+}
+
+.OOO {
+  margin-top: 12px;
+}
+
+.MMM:hover {
+background: #FFB697;
+border-radius: 15px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-o-border-radius: 5px;
+padding-left: 3px;
+width: 100px;
+}
+
+#dropdownMenuButton:hover {
+background: #FFB697;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-o-border-radius: 5px;
+padding-left: 3px;}
+
+@media only screen and (max-width: 991px) { 
+  #dropdownMenuButton {
+      text-align: left;        
+      padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .font {
+     font-size: 90%;
+  }
+  .fontGAG {
+      font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .font, .fontModal22 {
+     font-size: 100%;
+  }
+  .fontGAG {
+      font-size: 1.25rem;
+  }
+  .usModal8Header {
+    font-size: smaller;
+}
+}
+  
+.background {    
+  background: #00FFFF;
+  border-radius: 8px;  
+  padding-bottom: 50px;   
+}
+  
+.textCenter{
+  text-align: center;
+}
+  
+.AAA {
+  display: inline;
+}
+
+.dates {
+  display: inline-block;
+  text-align: right;
+  padding-left: var(--size-3);
+}
+
+@media screen and (max-width: 767px) {
+  .AAA, .dates {
+    font-size: 90%;
+  }
+}
+
+.indentText {
+  text-indent: 15px;
+}
+  
+.scrollArea {
+  --_spacer: var(--size-2);
+  display: grid;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  padding-bottom: var(--_spacer);
+  padding-left: var(--_spacer);
+  padding-right: var(--_spacer);
+  scroll-snap-stop: always;
+  scrollbar-color: #00FFFF #00A8E8;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+}
+
+.scrollArea-2018, .scrollArea-2019 {
+  grid-auto-columns: 38%;
+}
+
+.scrollArea-2024 {  
+  grid-auto-columns: 28%;
+}
+
+.photo {
+  display: grid;
+  gap: var(--_spacer);
+  padding: var(--_spacer); 
+  margin: 100 auto;
+}
+
+.photo > img {
+  inline-size: 100%; /* aka width */
+}
+
+.photo:hover {  
+  cursor: -webkit-grab; 
+  cursor: grab; 
+}
+
+.snaps-inline {
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: var(--_spacer);
+}
+
+.snaps-inline > .photo {
+  scroll-snap-align: start;
+}
+
+/* styling for modals */
+
+.modal-content {	
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  background: linear-gradient(#00FFFF, #ccfff2);
+  background: -moz-linear-gradient(#00FFFF, #ccfff2);
+  background: -webkit-linear-gradient(#00FFFF, #ccfff2);
+  background: -o-linear-gradient(#00FFFF, #ccfff2);
+}
+
+.modal-header {
+  border-bottom: 2px solid #0080ff;
+}
+
+.btn {
+  font-size: 90%;
+}
+.btn:hover {
+  font-size: 100%;
+}
+
+/* adjust size of modals based on screen size - assumes 16/9 ratio */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .largePhotoModalDialog {margin-left: 30vw;}
+  .smallPhotoModalDialog {margin-left: 17vw;}
+  .modal-header {height: 0;}
+  .largePhotoModalContent {max-width: 65vh;}
+  .smallPhotoModalContent {max-width: 99vh;}
+  .modal-footer {padding-top: 0;
+    padding-bottom: 0;
+    height: 50px;}
+  .modal-body {padding-bottom: 0;}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .largePhotoModalDialog {margin-left: 30vw;}
+  .smallPhotoModalDialog {margin-left: 17vw;}	
+  .modal-header {height: 0;}
+  .largePhotoModalContent {max-width: 68vh;}
+  .smallPhotoModalContent {max-width: 700px;}
+  .modal-footer {padding-top: 0;
+    padding-bottom: 0;
+    height: 50px;}
+  .modal-body {padding-bottom: 0;}
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {	
+  .largePhotoModalDialog {margin-left: 32vw;}
+  .smallPhotoModalDialog {margin-left: 23vw;}
+  .modal-header {height: 0;}
+  .largePhotoModalContent {max-width: 66vh;}
+  .smallPhotoModalContent {max-width: 700px;}
+  .modal-footer {padding-top: 0;
+    padding-bottom: 0;
+    height: 50px;}
+  .modal-body {padding-bottom: 0;}
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+  .largePhotoModalDialog {margin-left: 35vw;}
+  .modal-header {height: 0;}
+  .largePhotoModalContent {max-width: 58vh;}
+  .modal-footer {padding-top: 0;
+    padding-bottom: 0;
+    height: 50px;}
+  .modal-body {padding-bottom: 0;}
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1999px) {
+  .largePhotoModalDialog {margin-left: 32vw;}
+  .smallPhotoModalDialog {margin-left: 23vw;}
+  .modal-header {height: 0;}
+  .largePhotoModalContent {max-width: 51vh;}
+  .smallPhotoModalContent {max-width: 700px;}
+  .modal-footer {padding-top: 0;
+    padding-bottom: 0;
+    height: 50px;}
+  .modal-body {padding-bottom: 0;}
+}
+
+/* styling for Previous and Next buttons at bottom of page */
+
+.prevBtn {
+  float: left;
+  background: #00FFFF;
+  border: 2px solid #ccc;
+  border-radius: 10px;        
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  color: black; 
+  font-family: 'Merriweather', 'Georgia';   
+}
+
+.nextBtn {
+  float: right;
+  background: #00FFFF;
+  border: 2px solid #ccc;
+  border-radius: 10px;        
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  color: black; 
+  font-family: 'Merriweather', 'Georgia';   
+}
+
+
