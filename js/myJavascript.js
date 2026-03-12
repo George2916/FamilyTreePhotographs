@@ -1,3 +1,17 @@
+/* choose between two photos for Sunghee Ko-Greenslade on home page of Miscellaneous Photographs */
+
+window.onload = chooseSungheePicture;
+var myChoices = ["images/sunghee2021-22/us16.jpg", "images/sunghee2025/us10.jpg"];
+
+function chooseSungheePicture() {
+    
+    var randomNumber = Math.floor(Math.random() * myChoices.length);
+    
+    document.getElementById("homepagePicture").src = myChoices[randomNumber];
+       
+}
+
+
 /* activate Previous and Next buttons that appear in the modals */
 
 $("div[id^='myModal']").each(function(){
