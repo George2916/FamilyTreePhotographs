@@ -176,6 +176,13 @@ function myFunction2025A() {
   location.href = "sunghee2024.html"
 }
 
+function myFunction2025B() {
+  location.href = "sunghee2026.html"
+}
+
+function myFunction2026A() {
+  location.href = "sunghee2025.html"
+}
 
 
 
